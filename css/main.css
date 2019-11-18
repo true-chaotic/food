@@ -263,4 +263,70 @@ textarea {
     page-break-after: avoid;
   }
 }
+/**********************MAIN**************************/
+body {
+  background-color: #a8c054;
+  color: #3f6136;
+}
 
+.content {
+  max-width: 90%;
+  background-color: #f8f6f2;
+  margin: 0 auto;
+}
+
+.ingridients {
+
+}
+
+.ingridients__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/**********************MENU**************************/
+.content__menu{
+	
+}
+.menu{
+	
+}
+
+.menu__item{
+	display: inline-block;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: #3f6136;
+}
+
+/**********************MENU**************************/
+.content__body {
+	
+}
+
+.content__body-carousel {
+	height: 300px;
+	width: 300px;
+}
+
+.content__body-carousel_button {
+	height: 52px;
+	width: 52px;
+	border-radius: 40%;
+	background-image: url("../img/button.png");
+	border: none;
+}
+
+.content__body-carousel_button:first-child {
+	transform: scale(-1, 1);
+}
+
+.content__body-carousel_images {
+	
+}
+
+.content__body-carousel_images li{
+	display: inline-block;
+}

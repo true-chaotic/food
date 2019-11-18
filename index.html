@@ -15,26 +15,6 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-  <style>
-    body {
-      background-color: green;
-    }
-
-    .content {
-      max-width: 700px;
-      background-color: white;
-      margin: 0 auto;
-    }
-
-    .ingridients {
-
-    }
-
-    .ingridients__item {
-      display: inline-block;
-      vertical-align: top;
-    }
-  </style>
 </head>
 
 <body>
@@ -48,37 +28,37 @@
   <div class="content">
     <div class="content__menu">
     	<ul class="menu">
-    		<li class="menu__item"><a href="menu__link">Home</a></li>
-    		<li class="menu__item"><a href="menu__link">About</a></li>
-    		<li class="menu__item"><a href="menu__link">Contact</a></li>
-    		<li class="menu__item"><a href="menu__link">Salads</a></li>
-    		<li class="menu__item"><a href="menu__link">Smoothies</a></li>
+    		<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+    		<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+    		<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+    		<li class="menu__item"><a href="#" class="menu__link">Salads</a></li>
+    		<li class="menu__item"><a href="#" class="menu__link">Smoothies</a></li>
     	</ul>
     </div>
 
 	<div class="content__body">
-		<div class="content__body-carousel">
+		<div class="content__body-carousel siema">
 			<button class="content__body-carousel_button"></button>
 			<ul class="content__body-carousel_images">
-				<li><img src=""></li>
-				<li><img src=""></li>
-				<li><img src=""></li>
+				<li><img src="../img/bottle.png"></li>
+				<li><img src="../img/1.jpg"></li>
+				<li><img src="../img/2.jpg"></li>
 			</ul>
 			<button class="content__body-carousel_button"></button>
 		</div>
 		<div class="content__body-description">
-			   <header>
-           <a href="#">Smoothies</a>
-			     <h1>Tropical Kiwi Mix</h1>
-         </header>
+		   <header>
+				<a href="#">Smoothies</a>
+				<h1>Tropical Kiwi Mix</h1>
+			</header>
 			<p>This fresh-flavored smoothie can satrt a day out right or perk up an afternoon</p>
 			<div class="content__body-description_contents">
         <h2>Contents</h2>
         <ul class="ingridients">
           <li class="ingridients__item"><span class="icon icon_kiwi">Kiwi</span></li>
-          <li class="ingridients__item"><span class="icon icon_pineapple">Pineapple</span></li>
-          <li class="ingridients__item"><span class="icon icon_banane">Banana</span></li>
-          <li class="ingridients__item"><span class="icon icon_coconut">Coconut</span></li>
+		  <li class="ingridients__item"><span class="icon icon_banana">Banana</span></li>
+          <li class="ingridients__item"><span class="icon icon_blackberry">Blackberry</span></li>
+          <li class="ingridients__item"><span class="icon icon_avocado">Avocado</span></li>
         </ul>
 			</div>
 			<div class="content__body-description_nutri">
@@ -128,6 +108,12 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="siema.min.js"></script>
+<script>
+	const mySiema = new Siema();
+	document.querySelector('.content__body-carousel_button:first-child').addEventListener('click', () => mySiema.prev());
+	document.querySelector('.content__body-carousel_button:last-child').addEventListener('click', () => mySiema.next());
+</script>
 </body>
 
 </html>
